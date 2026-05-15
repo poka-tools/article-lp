@@ -1,0 +1,9 @@
+.env
+config.js
+*.log
+.DS_Store
+Thumbs.db
+/private/
+/secret/
+assets/config.local.js
+assets/affiliate-links.local.js

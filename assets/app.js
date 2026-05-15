@@ -10,6 +10,7 @@ function formatDate(date) {
   return date.replaceAll("-", ".");
 }
 
+const AFFILIATE_LINKS = window.AFFILIATE_LINKS || {};
 const ARCHIVE_PAGE_SIZE = 10;
 const PR_SLOT_IMAGES = {
   top: ["assets/images/pr-image-top.png"],
@@ -25,10 +26,10 @@ const PR_SLOT_IMAGES = {
 
 const UNDER_BANNER = `
   <div class="affiliate-banner is-slim" aria-label="PR">
-    <a href="https://px.a8.net/svt/ejp?a8mat=45A1MT+45FTMA+5P1E+5ZEMP" rel="nofollow sponsored">
+    <a href="${(AFFILIATE_LINKS.under || AFFILIATE_LINKS.lp || {}).href || "#"}" rel="nofollow sponsored">
       <img width="2241" height="702" alt="エンジニア転職の市場価値を確認するPR" src="assets/images/pr-image-under.png">
     </a>
-    <img class="tracking-pixel" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=45A1MT+45FTMA+5P1E+5ZEMP" alt="">
+    <img class="tracking-pixel" width="1" height="1" src="${(AFFILIATE_LINKS.under || AFFILIATE_LINKS.lp || {}).pixel || ""}" alt="">
   </div>
 `;
 
@@ -38,23 +39,25 @@ function getPrImage(slot) {
 }
 
 function renderPrBanner(className, slot) {
+  const link = AFFILIATE_LINKS[slot] || AFFILIATE_LINKS.lp || {};
   return `
     <div class="affiliate-banner ${className}" aria-label="PR">
-      <a href="https://px.a8.net/svt/ejp?a8mat=45A1MT+45FTMA+5P1E+5ZEMP" rel="nofollow sponsored">
+      <a href="${link.href || "#"}" rel="nofollow sponsored">
         <img width="1619" height="971" alt="エンジニア転職のキャリア相談PR" src="${getPrImage(slot)}">
       </a>
-      <img class="tracking-pixel" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=45A1MT+45FTMA+5P1E+5ZEMP" alt="">
+      <img class="tracking-pixel" width="1" height="1" src="${link.pixel || ""}" alt="">
     </div>
   `;
 }
 
 function renderSidePrBanner() {
+  const link = AFFILIATE_LINKS.side || {};
   return `
     <div class="affiliate-banner is-rectangle" aria-label="PR">
-      <a href="https://px.a8.net/svt/ejp?a8mat=45A1MT+45FTMA+5P1E+5YZ75" rel="nofollow sponsored">
+      <a href="${link.href || "#"}" rel="nofollow sponsored">
         <img width="300" height="250" alt="20代から30代エンジニア向けキャリア相談PR" src="${getPrImage("side")}">
       </a>
-      <img class="tracking-pixel" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=45A1MT+45FTMA+5P1E+5YZ75" alt="">
+      <img class="tracking-pixel" width="1" height="1" src="${link.pixel || ""}" alt="">
     </div>
   `;
 }
@@ -63,14 +66,14 @@ const A8_BANNERS = {
   compact: `
     <div class="affiliate-banner is-compact" aria-label="PR">
       <span>PR</span>
-      <a href="https://px.a8.net/svt/ejp?a8mat=45A1MT+45FTMA+5P1E+5Z6WX" rel="nofollow sponsored">
-        <img width="100" height="60" alt="エンジニア向け転職サービスの広告" src="https://www25.a8.net/svt/bgt?aid=250731461251&wid=001&eno=01&mid=s00000026573001004000&mc=1">
+      <a href="${(AFFILIATE_LINKS.compact || {}).href || "#"}" rel="nofollow sponsored">
+        <img width="100" height="60" alt="エンジニア向け転職サービスの広告" src="${(AFFILIATE_LINKS.compact || {}).image || ""}">
       </a>
-      <img class="tracking-pixel" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=45A1MT+45FTMA+5P1E+5Z6WX" alt="">
+      <img class="tracking-pixel" width="1" height="1" src="${(AFFILIATE_LINKS.compact || {}).pixel || ""}" alt="">
     </div>
   `,
   rectangle: () => renderSidePrBanner(),
-  under: UNDER_BANNER,
+  under: () => UNDER_BANNER,
   lp: () => renderPrBanner("is-tensyoku", "lp"),
   slim: () => UNDER_BANNER,
   wide: () => renderPrBanner("is-tensyoku", "lp"),
