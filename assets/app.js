@@ -12,11 +12,14 @@ function formatDate(date) {
 
 const ARCHIVE_PAGE_SIZE = 10;
 const PR_SLOT_IMAGES = {
-  top: ["assets/images/top-image-pr.png"],
-  lp: ["assets/images/pr-image-lp.png"],
+  top: ["assets/images/pr-image-top.png"],
+  lp: [
+    "assets/images/pr-image-lp.png",
+    "assets/images/pr-image-lp2.png"
+  ],
   side: ["pr-image.webp"],
   under: [
-    "assets/images/uander-image.png"
+    "assets/images/pr-image-under.png"
   ]
 };
 
@@ -58,19 +61,20 @@ const A8_BANNERS = {
     </div>
   `,
   rectangle: () => renderSidePrBanner(),
-  slim: `
+  under: `
     <div class="affiliate-banner is-slim" aria-label="PR">
       <a href="https://px.a8.net/svt/ejp?a8mat=45A1MT+45FTMA+5P1E+5ZEMP" rel="nofollow sponsored">
-        <img width="2241" height="702" alt="エンジニア転職の市場価値を確認するPR" src="assets/images/uander-image.png">
+        <img width="2241" height="702" alt="エンジニア転職の市場価値を確認するPR" src="assets/images/pr-image-under.png">
       </a>
       <img class="tracking-pixel" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=45A1MT+45FTMA+5P1E+5ZEMP" alt="">
     </div>
   `,
-  wide: () => renderPrBanner("is-tensyoku", "lp"),
   lp: () => renderPrBanner("is-tensyoku", "lp"),
-  tensyoku: () => renderPrBanner("is-tensyoku", "under"),
+  slim: () => A8_BANNERS.under,
+  wide: () => renderPrBanner("is-tensyoku", "lp"),
+  tensyoku: () => renderPrBanner("is-tensyoku", "lp"),
   top: () => renderPrBanner("is-top-pr", "top"),
-  under: () => renderPrBanner("is-tensyoku", "under")
+  under: () => A8_BANNERS.under
 };
 const A8_CAREER_BANNER = A8_BANNERS.wide;
 const A8_CAREER_SIDEBAR_BANNER = A8_BANNERS.rectangle;
@@ -175,7 +179,7 @@ function markdownToHtml(markdown) {
         html.push("</ul>");
         listOpen = false;
       }
-      html.push(`<div class="article-inline-banner">${A8_BANNERS.tensyoku()}</div>`);
+      html.push(`<div class="article-inline-banner">${A8_BANNERS.lp()}</div>`);
     } else if (line.startsWith("- ")) {
       if (!listOpen) {
         html.push("<ul>");
