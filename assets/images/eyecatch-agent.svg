@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Career service eyecatch</title>
+  <desc id="desc">Service comparison cards and matching signal.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071632"/>
+      <stop offset=".5" stop-color="#301a58"/>
+      <stop offset="1" stop-color="#9aed22"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="36" fill="url(#bg)"/>
+  <rect x="108" y="128" width="224" height="284" rx="26" fill="#fff" opacity=".92"/>
+  <rect x="368" y="90" width="224" height="322" rx="26" fill="#fff" opacity=".98"/>
+  <rect x="628" y="128" width="224" height="284" rx="26" fill="#fff" opacity=".92"/>
+  <circle cx="480" cy="166" r="38" fill="#9aed22"/>
+  <rect x="416" y="238" width="128" height="18" rx="9" fill="#071632" opacity=".72"/>
+  <rect x="410" y="286" width="140" height="16" rx="8" fill="#6b4be8" opacity=".34"/>
+  <rect x="158" y="214" width="124" height="16" rx="8" fill="#071632" opacity=".42"/>
+  <rect x="682" y="214" width="116" height="16" rx="8" fill="#071632" opacity=".42"/>
+  <path d="M432 356l36 36 76-92" fill="none" stroke="#9aed22" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

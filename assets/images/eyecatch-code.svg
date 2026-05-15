@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering code eyecatch</title>
+  <desc id="desc">Code editor panels for backend and frontend topics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071632"/>
+      <stop offset=".6" stop-color="#0c3b38"/>
+      <stop offset="1" stop-color="#8cf04d"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="36" fill="url(#bg)"/>
+  <rect x="102" y="92" width="756" height="356" rx="24" fill="#fff" opacity=".14"/>
+  <rect x="102" y="92" width="756" height="58" rx="24" fill="#fff" opacity=".18"/>
+  <circle cx="144" cy="121" r="10" fill="#ffb547"/>
+  <circle cx="178" cy="121" r="10" fill="#9aed22"/>
+  <circle cx="212" cy="121" r="10" fill="#21b7ff"/>
+  <g fill="none" stroke-linecap="round" stroke-width="16">
+    <path d="M238 246l-58 52 58 52" stroke="#9aed22"/>
+    <path d="M722 246l58 52-58 52" stroke="#9aed22"/>
+    <path d="M426 374l108-196" stroke="#fff" opacity=".76"/>
+  </g>
+  <rect x="304" y="214" width="118" height="16" rx="8" fill="#fff" opacity=".7"/>
+  <rect x="304" y="262" width="260" height="16" rx="8" fill="#fff" opacity=".45"/>
+  <rect x="304" y="310" width="184" height="16" rx="8" fill="#fff" opacity=".58"/>
+</svg>

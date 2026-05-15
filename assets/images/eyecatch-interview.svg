@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Interview preparation eyecatch</title>
+  <desc id="desc">Conversation panels for interview preparation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17223b"/>
+      <stop offset=".55" stop-color="#315fce"/>
+      <stop offset="1" stop-color="#ffb547"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="36" fill="url(#bg)"/>
+  <rect x="112" y="116" width="340" height="160" rx="34" fill="#fff" opacity=".9"/>
+  <path d="M210 276l-44 54 84-32" fill="#fff" opacity=".9"/>
+  <rect x="508" y="236" width="340" height="160" rx="34" fill="#071632" opacity=".72"/>
+  <path d="M738 396l54 54-96-30" fill="#071632" opacity=".72"/>
+  <rect x="166" y="178" width="204" height="18" rx="9" fill="#315fce" opacity=".7"/>
+  <rect x="166" y="220" width="146" height="18" rx="9" fill="#315fce" opacity=".38"/>
+  <rect x="566" y="300" width="204" height="18" rx="9" fill="#fff" opacity=".78"/>
+  <rect x="566" y="342" width="146" height="18" rx="9" fill="#9aed22" opacity=".82"/>
+</svg>

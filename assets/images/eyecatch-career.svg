@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Career strategy eyecatch</title>
+  <desc id="desc">Abstract dashboard panels and upward career path.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071632"/>
+      <stop offset="0.58" stop-color="#315fce"/>
+      <stop offset="1" stop-color="#9aed22"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="36" fill="url(#bg)"/>
+  <path d="M92 392c120-122 224-88 334-168 86-62 136-132 250-128 72 3 130 34 196 92" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".82"/>
+  <path d="M692 92h160v160" fill="none" stroke="#9aed22" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="92" y="84" width="246" height="136" rx="20" fill="#fff" opacity=".14"/>
+  <rect x="384" y="304" width="206" height="126" rx="20" fill="#fff" opacity=".18"/>
+  <rect x="638" y="302" width="230" height="122" rx="20" fill="#fff" opacity=".12"/>
+  <circle cx="210" cy="150" r="34" fill="#9aed22"/>
+  <rect x="254" y="124" width="44" height="14" rx="7" fill="#fff" opacity=".84"/>
+  <rect x="254" y="158" width="66" height="14" rx="7" fill="#fff" opacity=".54"/>
+</svg>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="エンジニア転職ラボの記事一覧です。転職ガイド、年収アップ、AIスキル、AI開発ツールなどジャンル別に探せます。">
+  <title>記事一覧 | エンジニア転職ラボ</title>
+  <link rel="stylesheet" href="styles.css?v=20260515-14">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="logo2.png" alt="" aria-hidden="true">
+      <span>エンジニア転職ラボ</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" aria-label="主要ナビゲーション">
+      <a href="index.html#main-article">転職ガイド</a>
+      <a href="ai-skills.html">AIスキル</a>
+      <a href="articles.html">記事一覧</a>
+      <a href="index.html#ai-news">AI最新情報</a>
+      <a href="index.html#popular">人気記事</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="archive-hero">
+      <div>
+        <p class="eyebrow">Article Archive</p>
+        <h1>記事一覧</h1>
+        <p>
+          転職ガイド、年収アップ、AIスキル、面接対策などをジャンル別に整理しています。
+          記事が増えても1ページ10件ずつ表示され、次へ進みながら探せます。
+        </p>
+      </div>
+    </section>
+
+    <section id="archive" class="archive-section">
+      <div class="section-heading">
+        <p>Search</p>
+        <h2>ジャンルから探す</h2>
+      </div>
+      <div id="archiveFilters" class="archive-filters" aria-label="記事カテゴリ"></div>
+      <div id="archiveList" class="archive-list"></div>
+      <div id="archivePagination" class="archive-pagination" aria-label="記事一覧のページ送り"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; 2026 エンジニア転職ラボ</small>
+  </footer>
+  <script src="assets/articles.js?v=20260515-7"></script>
+  <script src="assets/app.js?v=20260515-20"></script>
+</body>
+</html>
