@@ -149,9 +149,15 @@
 - `content/articles/2026-05-18-codex-claude-code-workflow.md`
 - `content/articles/2026-05-18-career-strategy-map.md`
 
+### 今日の日付LPフォルダから追加した記事
+
+- 取り込み元: `/mnt/c/Users/tsuba/workspace/affiliate/2026-05-18/lp/claude_東京エンジニア転職年収100万アップ戦略ガイド.txt`
+- 追加先: `content/lp/2026-05-18-tokyo-engineer-salary-up-100man-guide.md`
+
 ### サイト反映
 
 - `assets/articles.js` に新規LP4本とAI最新情報1本を登録
 - `assets/articles.js` に他ジャンル記事5本を登録
+- `assets/articles.js` に今日の日付LPフォルダからの記事1本を登録
 - 既存LP6本には `2026年5月18日更新` の追記を追加
 - 今日更新した記事へ、本文途中の関連記事リンクと末尾の `https://poka-tools.github.io/article-lp/` 導線を追加

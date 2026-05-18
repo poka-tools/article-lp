@@ -956,6 +956,18 @@ window.SITE_ARTICLES = [
     href: "article.html?slug=2026-05-18-career-strategy-map"
   },
   {
+    slug: "2026-05-18-tokyo-engineer-salary-up-100man-guide",
+    title: "東京エンジニア転職で年収100万アップする実践戦略ガイド",
+    category: "年収アップ",
+    label: "green",
+    image: "assets/images/eyecatch-salary-up-career-20260515.webp.png?v=20260518-2",
+    alt: "東京エンジニア転職で年収100万アップする実践戦略ガイドのアイキャッチ",
+    description: "経験3年以上のエンジニアが東京求人で年収100万円アップを狙うための市場価値、面接、職務経歴書、エージェント活用の実践ガイド。",
+    date: "2026-05-18",
+    content: "content/lp/2026-05-18-tokyo-engineer-salary-up-100man-guide.md",
+    href: "article.html?slug=2026-05-18-tokyo-engineer-salary-up-100man-guide"
+  },
+  {
     slug: "ai-market-value-check-lp",
     title: "【最新2026年度版】AI時代のエンジニア市場価値はどこで決まるか",
     category: "年収アップ",
