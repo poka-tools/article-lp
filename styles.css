@@ -1115,6 +1115,50 @@ a {
   padding: clamp(28px, 5vw, 52px);
 }
 
+.article-toc {
+  margin: 0 0 34px;
+  padding: 22px;
+  border: 1px solid rgba(190, 242, 100, 0.34);
+  border-radius: 16px;
+  background: rgba(9, 16, 36, 0.62);
+}
+
+.article-toc strong {
+  display: block;
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.article-toc ol {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.article-toc li {
+  color: #cfdafa;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.article-toc li.is-child {
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.article-toc a {
+  color: #e6edff;
+  text-decoration: none;
+}
+
+.article-toc a:hover {
+  color: var(--lime);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .article-detail-body h1 {
   display: none;
 }

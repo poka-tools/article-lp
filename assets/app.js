@@ -204,6 +204,52 @@ function markdownToHtml(markdown) {
   return html.join("");
 }
 
+function extractArticleToc(markdown) {
+  let h2Count = 0;
+  let h3Count = 0;
+
+  return markdown
+    .split(/\r?\n/)
+    .map((rawLine) => rawLine.trim())
+    .reduce((items, line) => {
+      if (line.startsWith("## ")) {
+        h2Count += 1;
+        h3Count = 0;
+        items.push({
+          id: `section-${h2Count}`,
+          level: 2,
+          title: line.slice(3)
+        });
+      } else if (line.startsWith("### ")) {
+        h3Count += 1;
+        items.push({
+          id: `section-${h2Count}-${h3Count}`,
+          level: 3,
+          title: line.slice(4)
+        });
+      }
+      return items;
+    }, []);
+}
+
+function renderArticleToc(markdown) {
+  const tocItems = extractArticleToc(markdown);
+  if (!tocItems.length) return "";
+
+  return `
+    <nav class="article-toc" aria-label="記事の目次">
+      <strong>目次</strong>
+      <ol>
+        ${tocItems.map((item) => `
+          <li class="${item.level === 3 ? "is-child" : ""}">
+            <a href="#${escapeAttribute(item.id)}">${renderInlineMarkdown(item.title)}</a>
+          </li>
+        `).join("")}
+      </ol>
+    </nav>
+  `;
+}
+
 function renderArticleCards() {
   const target = document.getElementById("articleCards");
   if (!target || !window.SITE_ARTICLES) return;
@@ -364,6 +410,7 @@ async function renderArticleDetail() {
         </aside>
       ` : ""}
       <div class="article-detail-body">
+        ${renderArticleToc(markdown)}
         ${markdownToHtml(markdown)}
       </div>
     `;
