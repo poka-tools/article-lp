@@ -161,3 +161,23 @@
 - `assets/articles.js` に今日の日付LPフォルダからの記事1本を登録
 - 既存LP6本には `2026年5月18日更新` の追記を追加
 - 今日更新した記事へ、本文途中の関連記事リンクと末尾の `https://poka-tools.github.io/article-lp/` 導線を追加
+
+## 2026-05-19
+
+### 追加したAI最新情報・料金プラン系記事
+
+- `content/articles/2026-05-19-ai-news-pricing-summary.md`
+- `content/articles/2026-05-19-chatgpt-gpt-5-5-usage-limits.md`
+- `content/articles/2026-05-19-openai-api-pricing-cost-design.md`
+- `content/articles/2026-05-19-claude-pricing-plan-check.md`
+- `content/articles/2026-05-19-gemini-api-pricing-search-cost.md`
+- `content/articles/2026-05-19-github-copilot-gpt-5-3-codex-base.md`
+- `content/articles/2026-05-19-copilot-code-review-actions-billing.md`
+- `content/articles/2026-05-19-copilot-data-residency-fedramp-cost.md`
+- `content/articles/2026-05-19-ai-coding-agent-cost-management.md`
+- `content/articles/2026-05-19-ai-tool-plan-comparison-engineer.md`
+
+### サイト反映
+
+- `assets/articles.js` に2026-05-19の記事10本を登録
+- OpenAI、Claude、Gemini、GitHub Copilotの公式情報をもとに、料金プラン、API単価、データレジデンシー、Copilot課金変更を整理

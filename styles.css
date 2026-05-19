@@ -1118,9 +1118,9 @@ a {
 .article-toc {
   margin: 0 0 34px;
   padding: 22px;
-  border: 1px solid rgba(190, 242, 100, 0.34);
+  border: 1px solid #dce5f6;
   border-radius: 16px;
-  background: rgba(9, 16, 36, 0.62);
+  background: #ffffff;
 }
 
 .article-toc strong {
@@ -1138,7 +1138,7 @@ a {
 }
 
 .article-toc li {
-  color: #cfdafa;
+  color: #26324a;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -1149,7 +1149,7 @@ a {
 }
 
 .article-toc a {
-  color: #e6edff;
+  color: #4b32c8;
   text-decoration: none;
 }
 
