@@ -22,7 +22,7 @@
 
 市場価値を確認したい人は、こちらの記事も参考になります。
 
-関連記事: [エンジニア年収診断LP](article.html?slug=2026-05-12-engineer-salary-diagnosis-lp)
+関連記事: [エンジニア年収診断](article.html?slug=2026-05-12-engineer-salary-diagnosis-lp)
 
 ## 東京エンジニア転職市場の今
 
@@ -92,7 +92,7 @@ AI活用で業務を効率化した実績があると、さらに差別化でき
 
 30代の転職戦略を詳しく知りたい人は、こちらも参考になります。
 
-関連記事: [30代エンジニア向け転職LP](article.html?slug=2026-05-12-30s-engineer-career-lp)
+関連記事: [30代エンジニア向け転職](article.html?slug=2026-05-12-30s-engineer-career-lp)
 
 ## 転職活動の現実的な進め方
 
@@ -115,7 +115,7 @@ AI活用で業務を効率化した実績があると、さらに差別化でき
 
 職務経歴書の見せ方を詳しく知りたい人は、こちらも参考になります。
 
-関連記事: [エンジニア職務経歴書添削LP](article.html?slug=2026-05-12-resume-review-lp)
+関連記事: [エンジニア職務経歴書添削](article.html?slug=2026-05-12-resume-review-lp)
 
 ## キャリアアドバイザーを使う理由
 

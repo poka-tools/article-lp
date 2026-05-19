@@ -66,7 +66,7 @@
 
 職務経歴書の見せ方を先に整えたい人は、こちらも参考になります。
 
-関連記事: [エンジニア職務経歴書添削LP](article.html?slug=2026-05-12-resume-review-lp)
+関連記事: [エンジニア職務経歴書添削](article.html?slug=2026-05-12-resume-review-lp)
 
 ## AI経験も忘れずに伝える
 

@@ -51,7 +51,7 @@ AIツールを使ってレビューやテスト観点の洗い出しをしてい
 
 年収アップの現在地を確認したい人は、こちらも参考になります。
 
-関連記事: [エンジニア年収診断LP](article.html?slug=2026-05-12-engineer-salary-diagnosis-lp)
+関連記事: [エンジニア年収診断](article.html?slug=2026-05-12-engineer-salary-diagnosis-lp)
 
 ==年収アップを狙うなら、作業量ではなく任せられる範囲を広げて見せることが重要です。==
 
@@ -94,7 +94,7 @@ AI開発ツールを使えば、実装の一部は速くなります。しかし
 
 AIスキルを転職でどう見せるか知りたい人は、こちらも参考になります。
 
-関連記事: [AIスキルを年収アップにつなげる転職相談LP](article.html?slug=2026-05-12-ai-skill-career-consultation-lp)
+関連記事: [AIスキルを年収アップにつなげる転職相談](article.html?slug=2026-05-12-ai-skill-career-consultation-lp)
 
 ## 職務経歴書に落とし込む
 
@@ -114,7 +114,7 @@ AI活用経験も同じです。「Claude Codeを利用」ではなく、「既�
 
 職務経歴書の見せ方を詳しく知りたい人は、こちらも確認してください。
 
-関連記事: [エンジニア職務経歴書添削LP](article.html?slug=2026-05-12-resume-review-lp)
+関連記事: [エンジニア職務経歴書添削](article.html?slug=2026-05-12-resume-review-lp)
 
 ## キャリアの優先順位を決める
 
