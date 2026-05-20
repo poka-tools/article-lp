@@ -12,8 +12,14 @@ function formatDate(date) {
 
 const AFFILIATE_LINKS = window.AFFILIATE_LINKS || {};
 const ARCHIVE_PAGE_SIZE = 10;
+const CATEGORY_DEFAULT_IMAGES = {
+  "転職ガイド": "assets/images/image7.png"
+};
 const PR_SLOT_IMAGES = {
-  top: ["assets/images/pr-image-top.png"],
+  top: [
+    "assets/images/pr-image-top.png",
+    "assets/images/pr-image-to2.png"
+  ],
   lp: [
     "assets/images/pr-image-lp.png",
     "assets/images/pr-image-lp2.png"
@@ -42,6 +48,10 @@ function absoluteAssetUrl(path) {
   return new URL(cleanPath, SITE_BASE_URL).href;
 }
 
+function getArticleImage(article) {
+  return CATEGORY_DEFAULT_IMAGES[article.category] || article.image;
+}
+
 function setMetaContent(selector, content) {
   const tag = document.head.querySelector(selector);
   if (tag) tag.setAttribute("content", content);
@@ -51,7 +61,7 @@ function updateArticleMeta(article) {
   const title = `${article.title} | エンジニア転職ラボ`;
   const description = article.description || "エンジニア転職、AIスキル、職務経歴書、面接対策、年収アップの記事です。";
   const url = `${SITE_BASE_URL}article.html?slug=${encodeURIComponent(article.slug)}`;
-  const image = absoluteAssetUrl(article.image);
+  const image = absoluteAssetUrl(getArticleImage(article));
 
   document.title = title;
   setMetaContent('meta[name="description"]', description);
@@ -74,10 +84,14 @@ function getPrImage(slot) {
 
 function renderPrBanner(className, slot) {
   const link = AFFILIATE_LINKS[slot] || AFFILIATE_LINKS.lp || {};
+  const images = PR_SLOT_IMAGES[slot] || PR_SLOT_IMAGES.lp;
+  const rotationAttrs = images.length > 1
+    ? ` data-pr-slot="${slot}" data-pr-images="${images.join("|")}"`
+    : "";
   return `
     <div class="affiliate-banner ${className}" aria-label="PR">
       <a href="${link.href || "#"}" rel="nofollow sponsored">
-        <img width="1619" height="971" alt="エンジニア転職のキャリア相談PR" src="${getPrImage(slot)}">
+        <img width="1619" height="971" alt="エンジニア転職のキャリア相談PR" src="${getPrImage(slot)}"${rotationAttrs}>
       </a>
       <img class="tracking-pixel" width="1" height="1" src="${link.pixel || ""}" alt="">
     </div>
@@ -158,6 +172,24 @@ function renderAffiliateBanners() {
     const variant = target.dataset.affiliateVariant || "wide";
     const banner = A8_BANNERS[variant] || A8_CAREER_BANNER;
     target.innerHTML = typeof banner === "function" ? banner() : banner;
+  });
+  startPrImageRotation();
+}
+
+function startPrImageRotation() {
+  document.querySelectorAll("img[data-pr-images]").forEach((image) => {
+    if (image.dataset.prRotationStarted === "true") return;
+
+    const images = image.dataset.prImages.split("|").filter(Boolean);
+    if (images.length < 2) return;
+
+    image.dataset.prRotationStarted = "true";
+    let index = Math.max(0, images.indexOf(image.getAttribute("src")));
+
+    window.setInterval(() => {
+      index = (index + 1) % images.length;
+      image.setAttribute("src", images[index]);
+    }, 6000);
   });
 }
 
@@ -296,7 +328,7 @@ function renderArticleCards() {
 
   target.innerHTML = articles.map((article) => `
     <a class="article-card" href="${escapeHtml(article.href)}">
-      <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.alt || article.title)}">
+      <img src="${escapeHtml(getArticleImage(article))}" alt="${escapeHtml(article.alt || article.title)}">
       <div>
         <span class="label ${escapeHtml(article.label)}">${escapeHtml(article.category)}</span>
         <h3>${escapeHtml(article.title)}</h3>
@@ -331,7 +363,7 @@ function renderArchiveCards(category = "all", page = 1) {
 
   list.innerHTML = visibleArticles.map((article) => `
     <a class="archive-card" href="${escapeHtml(article.href)}">
-      <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.alt || article.title)}">
+      <img src="${escapeHtml(getArticleImage(article))}" alt="${escapeHtml(article.alt || article.title)}">
       <div>
         <div class="archive-meta">
           <span class="label ${escapeHtml(article.label)}">${escapeHtml(article.category)}</span>
@@ -403,7 +435,7 @@ function renderRelatedArticles(currentSlug) {
     .slice(0, 6)
     .map((article) => `
       <a href="${escapeHtml(article.href)}">
-        <img src="${escapeHtml(article.image)}" alt="">
+        <img src="${escapeHtml(getArticleImage(article))}" alt="">
         <span>${escapeHtml(article.category)}</span>
         <strong>${escapeHtml(article.title)}</strong>
       </a>
@@ -432,7 +464,7 @@ async function renderArticleDetail() {
         <p class="article-meta">公開日 ${formatDate(article.date)}</p>
         <h1>${escapeHtml(article.title)}</h1>
         <p>${escapeHtml(article.description)}</p>
-        <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.alt || article.title)}">
+        <img src="${escapeHtml(getArticleImage(article))}" alt="${escapeHtml(article.alt || article.title)}">
       </header>
       ${article.sourceUrl ? `
         <aside class="official-source-box">
