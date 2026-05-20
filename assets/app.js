@@ -33,6 +33,40 @@ const UNDER_BANNER = `
   </div>
 `;
 
+const SITE_BASE_URL = "https://poka-tools.github.io/article-lp/";
+
+function absoluteAssetUrl(path) {
+  if (!path) return `${SITE_BASE_URL}assets/images/eyecatch-ai-era-engineer-skills.webp`;
+  const cleanPath = String(path).split("?")[0];
+  if (cleanPath.startsWith("http://") || cleanPath.startsWith("https://")) return cleanPath;
+  return new URL(cleanPath, SITE_BASE_URL).href;
+}
+
+function setMetaContent(selector, content) {
+  const tag = document.head.querySelector(selector);
+  if (tag) tag.setAttribute("content", content);
+}
+
+function updateArticleMeta(article) {
+  const title = `${article.title} | エンジニア転職ラボ`;
+  const description = article.description || "エンジニア転職、AIスキル、職務経歴書、面接対策、年収アップの記事です。";
+  const url = `${SITE_BASE_URL}article.html?slug=${encodeURIComponent(article.slug)}`;
+  const image = absoluteAssetUrl(article.image);
+
+  document.title = title;
+  setMetaContent('meta[name="description"]', description);
+  setMetaContent('meta[property="og:title"]', title);
+  setMetaContent('meta[property="og:description"]', description);
+  setMetaContent('meta[property="og:url"]', url);
+  setMetaContent('meta[property="og:image"]', image);
+  setMetaContent('meta[name="twitter:title"]', title);
+  setMetaContent('meta[name="twitter:description"]', description);
+  setMetaContent('meta[name="twitter:image"]', image);
+
+  const canonical = document.head.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.setAttribute("href", url);
+}
+
 function getPrImage(slot) {
   const images = PR_SLOT_IMAGES[slot] || PR_SLOT_IMAGES.lp;
   return images[Math.floor(Math.random() * images.length)];
@@ -385,7 +419,7 @@ async function renderArticleDetail() {
   const slug = params.get("slug");
   const article = window.SITE_ARTICLES.find((item) => item.slug === slug) || window.SITE_ARTICLES[0];
 
-  document.title = `${article.title} | エンジニア転職ラボ`;
+  updateArticleMeta(article);
   renderRelatedArticles(article.slug);
 
   try {

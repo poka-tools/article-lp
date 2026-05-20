@@ -1,5 +1,30 @@
 # LP更新履歴
 
+## 2026-05-20
+
+### 今日の日付LPフォルダから追加した記事
+
+- 取り込み元: `/mnt/c/Users/tsuba/workspace/affiliate/2026-05-20/lp/claude_東京エンジニアが転職で年収100万円上げるために知っておくべきこと.txt`
+- 追加先: `content/lp/2026-05-20-tokyo-engineer-salary-up-100man.md`
+
+### 追加した転職ガイド記事
+
+- `content/articles/2026-05-20-same-skill-salary-gap.md`
+- `content/articles/2026-05-20-career-change-honest-reality.md`
+- `content/articles/2026-05-20-30s-engineer-career-change.md`
+- `content/articles/2026-05-20-market-value-check.md`
+- `content/articles/2026-05-20-skill-inventory-interview.md`
+- `content/articles/2026-05-20-regret-free-career-change-prep.md`
+
+### 追加したAI最新情報
+
+- `content/articles/2026-05-20-ai-news-agentic-gemini-claude-codex.md`
+
+### サイト反映
+
+- `assets/articles.js` に2026-05-20の記事8本を登録
+- Google I/O 2026、Gemini 3.5 Flash、AnthropicとKPMG、OpenAI GPT-5.5/Codexの公式情報をもとにAI最新情報を整理
+
 ## 2026-05-17
 
 ### articleフォルダ確認
@@ -164,6 +189,11 @@
 
 ## 2026-05-19
 
+### 今日の日付LPフォルダから追加した記事
+
+- 取り込み元: `/mnt/c/Users/tsuba/workspace/affiliate/2026-05-19/lp/claude_東京エンジニアが転職で年収100万アップする方法.txt`
+- 追加先: `content/lp/2026-05-19-tokyo-engineer-salary-up-method.md`
+
 ### 追加したAI最新情報・料金プラン系記事
 
 - `content/articles/2026-05-19-ai-news-pricing-summary.md`
@@ -179,5 +209,6 @@
 
 ### サイト反映
 
+- `assets/articles.js` に今日の日付LPフォルダからの記事1本を登録
 - `assets/articles.js` に2026-05-19の記事10本を登録
 - OpenAI、Claude、Gemini、GitHub Copilotの公式情報をもとに、料金プラン、API単価、データレジデンシー、Copilot課金変更を整理
