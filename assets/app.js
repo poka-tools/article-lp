@@ -228,11 +228,15 @@ function markdownToHtml(markdown) {
       if (listOpen) html.push("</ul>");
       listOpen = false;
       html.push(`<h1>${renderInlineMarkdown(line.slice(2))}</h1>`);
+      html.push(`<div class="article-inline-banner article-top-cta">${A8_BANNERS.lp()}</div>`);
     } else if (line.startsWith("## ")) {
       if (listOpen) html.push("</ul>");
       listOpen = false;
       h2Count += 1;
       h3Count = 0;
+      if (h2Count === 2) {
+        html.push(`<div class="article-inline-banner">${A8_CAREER_BANNER}</div>`);
+      }
       html.push(`<h2 id="section-${h2Count}">${renderInlineMarkdown(line.slice(3))}</h2>`);
     } else if (line.startsWith("### ")) {
       if (listOpen) html.push("</ul>");

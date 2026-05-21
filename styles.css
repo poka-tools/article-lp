@@ -89,6 +89,20 @@ a {
   color: var(--lime);
 }
 
+.nav-cta-link {
+  background: var(--lime);
+  color: #1a1a2e !important;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 900;
+  transition: opacity 0.2s;
+}
+
+.nav-cta-link:hover {
+  opacity: 0.85;
+  color: #1a1a2e !important;
+}
+
 .menu-toggle {
   display: none;
   width: 44px;
