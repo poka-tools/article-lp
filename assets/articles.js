@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-22-ses-sier-salary-structure",
+    title: "SES・SIerエンジニアの年収が止まる本当の理由——東京で年収100万上げた人が最初にやったこと",
+    category: "年収アップ",
+    label: "green",
+    image: "assets/images/eyecatch-800man-engineer-common-points.jpg?v=20260522-1",
+    alt: "SES・SIerエンジニアの年収構造と転職のアイキャッチ",
+    description: "SES・SIerにいると年収が上がりにくい構造的理由と、実際に年収100万上げた人の共通点を解説。社内評価と市場評価の差を知ることから始めましょう。",
+    date: "2026-05-22",
+    content: "content/lp/2026-05-22-ses-sier-salary-structure.md",
+    href: "article.html?slug=2026-05-22-ses-sier-salary-structure"
+  },
+  {
+    slug: "2026-05-22-ai-news-gemini-spark-gpt55",
+    title: "2026年5月22日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260522-1",
+    alt: "2026年5月22日AI最新情報のアイキャッチ",
+    description: "Google I/O 2026でGemini SparkとOmniを発表、OpenAI GPT-5.5公開。AIエージェント実用化の流れとエンジニア転職への影響を整理。",
+    sourceName: "Google / OpenAI / Anthropic",
+    sourceUrl: "https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/",
+    officialSummary: "Google I/O 2026でGemini Spark（常時稼働エージェント）・Omni（生成映像）を発表。OpenAIはGPT-5.5をリリース。",
+    meaning: "AIツールを個人で使えるだけでなく、エージェント設計・品質管理・チームへの導入まで語れるエンジニアが採用市場で評価されやすくなっています。",
+    date: "2026-05-22",
+    content: "content/articles/2026-05-22-ai-news-gemini-spark-gpt55.md",
+    href: "article.html?slug=2026-05-22-ai-news-gemini-spark-gpt55"
+  },
+  {
     slug: "2026-05-20-tokyo-engineer-salary-up-100man",
     title: "東京のエンジニアが転職で年収100万円上げるために知っておくべきこと",
     category: "年収アップ",
