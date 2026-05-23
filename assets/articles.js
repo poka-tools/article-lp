@@ -16,6 +16,42 @@ window.SITE_ARTICLES = [
     href: "article.html?slug=2026-05-23-ai-news-claude-opus47-codex-mobile"
   },
   {
+    slug: "2026-05-23-code-with-claude-2026-managed-agents",
+    title: "Code with Claude 2026が示すAI開発の次の段階──Fast mode・Managed Agents・6月クレジット制変更",
+    category: "AIスキル",
+    label: "purple",
+    image: "assets/images/eyecatch-claude-code-engineer-weapon-2026.webp?v=20260523-2",
+    alt: "Code with Claude 2026 Managed AgentsアップデートのAIスキル記事アイキャッチ",
+    description: "Claude Opus 4.7 Fast mode追加・Managed AgentsのDreaming/マルチエージェント/Webhooks正式化・6/15クレジット制移行。エンジニアが今把握すべき変更点を整理。",
+    date: "2026-05-23",
+    content: "content/articles/2026-05-23-code-with-claude-2026-managed-agents.md",
+    href: "article.html?slug=2026-05-23-code-with-claude-2026-managed-agents"
+  },
+  {
+    slug: "2026-05-23-codex-chrome-goal-mode",
+    title: "CodexのChrome拡張・Goal mode正式化・Appshots──2026年5月の主要アップデート",
+    category: "AI開発ツール",
+    label: "purple",
+    image: "assets/images/eyecatch-codex-windows-personal-dev.webp?v=20260523-3",
+    alt: "Codex Chrome拡張・Goal mode GA・AppshotsのAI開発ツール記事アイキャッチ",
+    description: "Codex Chrome拡張リリース・Goal modeがGA昇格・macOS Appshots追加・モバイルプレビュー開始。開発フローに直結する2026年5月のCodexアップデートまとめ。",
+    date: "2026-05-23",
+    content: "content/articles/2026-05-23-codex-chrome-goal-mode.md",
+    href: "article.html?slug=2026-05-23-codex-chrome-goal-mode"
+  },
+  {
+    slug: "2026-05-23-mensetu-taisaku-ai-jidai",
+    title: "AI時代のエンジニア転職面接で落とされる本当の理由──技術力だけでは通らなくなった面接を突破する準備法",
+    category: "面接対策",
+    label: "lime",
+    image: "assets/images/eyecatch-interview-ai-answer.webp?v=20260523-4",
+    alt: "AI時代のエンジニア面接対策LP記事アイキャッチ",
+    description: "「AIを使っています」だけでは通過できない2026年の面接。技術面接・人物面接・逆質問の準備法と、AI活用経験の語り方を転職支援の現場から解説。",
+    date: "2026-05-23",
+    content: "content/lp/2026-05-23-mensetu-taisaku-ai-jidai.md",
+    href: "article.html?slug=2026-05-23-mensetu-taisaku-ai-jidai"
+  },
+  {
     slug: "2026-05-23-shajo-hyoka-shijo-hyoka-gap",
     title: "社内評価と市場評価の乖離——東京エンジニアが知っておくべき本当の相場",
     category: "年収アップ",
