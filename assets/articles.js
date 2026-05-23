@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-23-ai-news-claude-opus47-codex-mobile",
+    title: "2026年5月23日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260523-1",
+    alt: "2026年5月23日AI最新情報のアイキャッチ",
+    description: "Anthropic Claude Opus 4.7リリース・マルチエージェント機能、OpenAI CodexのモバイルとGPT-5.3-Codex。エンジニア転職市場への影響を整理。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://www.anthropic.com/news/claude-opus-4-7",
+    officialSummary: "Claude Opus 4.7リリース・Managed AgentsのDreamingとマルチエージェント対応、CodexのモバイルプレビューとGPT-5.3-Codex公開。",
+    meaning: "AIエージェントを業務フローに組み込んだ実績を語れるエンジニアへの需要が2026年後半にかけて高まる見込みです。",
+    date: "2026-05-23",
+    content: "content/articles/2026-05-23-ai-news-claude-opus47-codex-mobile.md",
+    href: "article.html?slug=2026-05-23-ai-news-claude-opus47-codex-mobile"
+  },
+  {
+    slug: "2026-05-23-shajo-hyoka-shijo-hyoka-gap",
+    title: "社内評価と市場評価の乖離——東京エンジニアが知っておくべき本当の相場",
+    category: "年収アップ",
+    label: "green",
+    image: "assets/images/eyecatch-salary-negotiation-before-interview.jpg?v=20260523-1",
+    alt: "社内評価と市場評価の乖離を示す東京エンジニア転職のアイキャッチ",
+    description: "SES・SIerエンジニアが年収100万円の損をしている構造的な理由と、転職意欲ゼロでも今すぐ市場価値を確かめられる3つの方法を解説。",
+    date: "2026-05-23",
+    content: "content/lp/2026-05-23-shajo-hyoka-shijo-hyoka-gap.md",
+    href: "article.html?slug=2026-05-23-shajo-hyoka-shijo-hyoka-gap"
+  },
+  {
     slug: "2026-05-22-ses-sier-salary-structure",
     title: "SES・SIerエンジニアの年収が止まる本当の理由——東京で年収100万上げた人が最初にやったこと",
     category: "年収アップ",
