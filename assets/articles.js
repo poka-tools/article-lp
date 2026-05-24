@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-24-ai-news-claude-small-business-gpt55-instant",
+    title: "GPT-5.5 InstantとClaude for Small Business──2026年5月の業務利用AI最新動向",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260524-1",
+    alt: "2026年5月24日AI最新情報のアイキャッチ",
+    description: "GPT-5.5 InstantがChatGPTのデフォルトに。Claude for Small BusinessがHubSpot等に統合。業務AIの最新動向とエンジニア転職への影響をまとめます。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://www.anthropic.com/news",
+    officialSummary: "GPT-5.5 Instantがデフォルトモデルに昇格し幻覚を52.5%削減。Claude for Small Businessが主要ビジネスツールに統合。",
+    meaning: "AIが業務インフラ化するにつれ、設計・運用できるエンジニアの市場価値が高まる。",
+    date: "2026-05-24",
+    content: "content/articles/2026-05-24-ai-news-claude-small-business-gpt55-instant.md",
+    href: "article.html?slug=2026-05-24-ai-news-claude-small-business-gpt55-instant"
+  },
+  {
+    slug: "2026-05-24-hyoka-sumioki-next-action",
+    title: "評価面談で、また据え置きだったエンジニアへ",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-era-engineer-skills.jpg?v=20260524-2",
+    alt: "評価面談据え置き後の転職行動のアイキャッチ",
+    description: "評価面談で据え置きを告げられた直後にすべき3つのこと。社内評価と市場評価のギャップと、情報収集から始める動き方を整理します。",
+    date: "2026-05-24",
+    content: "content/lp/2026-05-24-hyoka-sumioki-next-action.md",
+    href: "article.html?slug=2026-05-24-hyoka-sumioki-next-action"
+  },
+  {
     slug: "2026-05-23-ai-news-claude-opus47-codex-mobile",
     title: "2026年5月23日時点のAI最新情報まとめ",
     category: "AI最新情報",
