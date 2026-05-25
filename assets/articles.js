@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-25-ai-news-codex-desktop-agent-claude-routines",
+    title: "2026年05月25日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260525-1",
+    alt: "2026年5月25日AI最新情報のアイキャッチ",
+    description: "OpenAI CodexがMac操作・スケジュール実行対応のデスクトップAIエージェントに進化。AnthropicはClaude Code Routinesを正式提供開始。エンジニアのAI活用戦略が問われる転換点。",
+    sourceName: "OpenAI / Anthropic",
+    sourceUrl: "https://www.techtimes.com/articles/317074/20260524/openai-codex-becomes-desktop-agent-controls-mac-apps-watches-screen-runs-mobile.htm",
+    officialSummary: "OpenAI CodexがデスクトップAIエージェントとして刷新され、Macアプリ操作・ロック中継続実行・Slack連携が可能に。AnthropicはClaude Code Routinesでコーディング自動化を強化。",
+    meaning: "AIエージェントの設計・監視スキルが転職市場での新たな差別化軸になりつつある。",
+    date: "2026-05-25",
+    content: "content/articles/2026-05-25-ai-news-codex-desktop-agent-claude-routines.md",
+    href: "article.html?slug=2026-05-25-ai-news-codex-desktop-agent-claude-routines"
+  },
+  {
+    slug: "2026-05-25-engineer-shijo-souba-shiranai-sonshitsu",
+    title: "転職しなくていい。でもエンジニアが市場相場を知らないまま5年働くと、何年分もの収入を損し続ける",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-800man-engineer-common-points.jpg?v=20260525-2",
+    alt: "SES年収の構造と市場相場を知ることで年収損失を防ぐエンジニアのイメージ",
+    description: "月80万単価でも手取りは480万——SES年収の構造的な天井を数字で解説。転職しなくていい、でも市場相場を知らないまま5年働くと500万円以上損し続ける理由とは。",
+    date: "2026-05-25",
+    content: "content/lp/2026-05-25-engineer-shijo-souba-shiranai-sonshitsu.md",
+    href: "article.html?slug=2026-05-25-engineer-shijo-souba-shiranai-sonshitsu"
+  },
+  {
     slug: "2026-05-24-ai-news-claude-small-business-gpt55-instant",
     title: "GPT-5.5 InstantとClaude for Small Business──2026年5月の業務利用AI最新動向",
     category: "AI最新情報",
