@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-26-ai-news-claude-openai-may-update",
+    title: "2026年05月26日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260526-1",
+    alt: "2026年5月26日AI最新情報のアイキャッチ",
+    description: "Anthropicが28のセキュリティ統合とMCPトンネルを公開。OpenAIはGPT-5.5をリリースし幻覚52.5%減・メモリソース表示など実用性を強化。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://www.helpnetsecurity.com/2026/05/25/anthropic-security-compliance-integrations-claude/",
+    officialSummary: "AnthropicがClaude向け28のセキュリティ統合とManaged AgentsのMCPトンネルを発表。OpenAIはGPT-5.5をデフォルトモデルに格上げし幻覚率52.5%減を達成。",
+    meaning: "EnterpriseへのAI組み込み需要が拡大し、セキュリティ統合や自律エージェント設計を扱えるエンジニアの市場価値が高まっている。",
+    date: "2026-05-26",
+    content: "content/articles/2026-05-26-ai-news-claude-openai-may-update.md",
+    href: "article.html?slug=2026-05-26-ai-news-claude-openai-may-update"
+  },
+  {
+    slug: "2026-05-26-ses-3year-career-checklist",
+    title: "エンジニア3年目の転職は早すぎる？SES・受託経験者が転職すべき状態を判断する5つのチェックリスト",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-era-engineer-skills.jpg?v=20260526-2",
+    alt: "SES・受託エンジニアが転職タイミングを判断するチェックリストのアイキャッチ",
+    description: "SES・受託1〜3年目が転職すべき状態かを5つのチェックで自己診断。年数より「今の状態」で判断する実用フレームを解説。",
+    date: "2026-05-26",
+    content: "content/lp/2026-05-26-ses-3year-career-checklist.md",
+    href: "article.html?slug=2026-05-26-ses-3year-career-checklist"
+  },
+  {
     slug: "2026-05-25-ai-news-codex-desktop-agent-claude-routines",
     title: "2026年05月25日時点のAI最新情報まとめ",
     category: "AI最新情報",
