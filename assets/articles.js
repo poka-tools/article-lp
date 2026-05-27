@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-27-ai-news-claude-openai-may-week4",
+    title: "2026年5月27日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/anthropic-ai-news.webp?v=20260527-1",
+    alt: "2026年5月27日AI最新情報のアイキャッチ",
+    description: "AnthropicがClaude Designでビジュアルプロトタイピングを解放、Dreaming機能でエージェントが自律学習。OpenAIはChatGPTに個人財務管理と音声インテリジェンスを追加。エンジニア転職市場への影響を解説。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://www.anthropic.com/news/claude-design-anthropic-labs",
+    officialSummary: "AnthropicはClaude DesignとDreaming機能を発表しエージェントの自律改善を実現。OpenAIはChatGPTに個人財務管理と新音声モデルを追加した。",
+    meaning: "AIプロトタイピング・自律エージェント・金融AIが同時進化し、設計評価スキルと金融×AI実装経験を持つエンジニアの市場価値が急上昇する局面に入った。",
+    date: "2026-05-27",
+    content: "content/articles/2026-05-27-ai-news-claude-openai-may-week4.md",
+    href: "article.html?slug=2026-05-27-ai-news-claude-openai-may-week4"
+  },
+  {
+    slug: "2026-05-27-tensyoku-kokai-chigai",
+    title: "エンジニア転職で後悔した人・しなかった人の違いを徹底比較【実例あり】",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-era-30s-career.jpg?v=20260527-2",
+    alt: "エンジニア転職の後悔と成功の違いを比較するイメージ",
+    description: "転職後悔の原因は準備量ではなく準備の方向性にある。後悔した人・しなかった人の実例を比較しながら、後悔しない転職の具体的な進め方を解説する。",
+    date: "2026-05-27",
+    content: "content/lp/2026-05-27-tensyoku-kokai-chigai.md",
+    href: "article.html?slug=2026-05-27-tensyoku-kokai-chigai"
+  },
+  {
     slug: "2026-05-26-ai-news-claude-openai-may-update",
     title: "2026年05月26日時点のAI最新情報まとめ",
     category: "AI最新情報",
