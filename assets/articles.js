@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-28-ai-news-claude-code-gpt55-codex-mobile",
+    title: "2026年5月28日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260528-1",
+    alt: "2026年5月28日AI最新情報のアイキャッチ",
+    description: "Claude Code Auto Mode・自己ホストサンドボックス、GPT-5.5 Instantがデフォルトモデルに、Codexモバイルプレビュー開始。エンジニア転職市場への影響を解説。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://openai.com/index/gpt-5-5-instant/",
+    officialSummary: "Claude CodeがAuto Mode・自己ホストサンドボックスを追加し、OpenAIはGPT-5.5 Instantを全ユーザーに展開、ハルシネーション52.5%削減を達成。",
+    meaning: "AIエージェント運用・MCPサーバー構成スキルへの需要増加により、インフラとAIを横断できるエンジニアの市場価値がさらに高まる。",
+    date: "2026-05-28",
+    content: "content/articles/2026-05-28-ai-news-claude-code-gpt55-codex-mobile.md",
+    href: "article.html?slug=2026-05-28-ai-news-claude-code-gpt55-codex-mobile"
+  },
+  {
+    slug: "2026-05-28-ses-2nen-tensyoku-timing-strategy",
+    title: "SES歴2年目のエンジニアが今すぐ動くべき理由と、年収100万アップを実現した転職戦略【2026年版】",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-800man-engineer-common-points.jpg?v=20260528-2",
+    alt: "SES2年目エンジニアの転職戦略と年収アップのアイキャッチ",
+    description: "SES2年目が転職の最良タイミングである3つの根拠と、年収100万アップを実現した転職者の行動パターン・具体的ステップを数字で解説。",
+    date: "2026-05-28",
+    content: "content/lp/2026-05-28-ses-2nen-tensyoku-timing-strategy.md",
+    href: "article.html?slug=2026-05-28-ses-2nen-tensyoku-timing-strategy"
+  },
+  {
     slug: "2026-05-27-ai-news-claude-openai-may-week4",
     title: "2026年5月27日時点のAI最新情報まとめ",
     category: "AI最新情報",
