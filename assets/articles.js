@@ -331,18 +331,7 @@ window.SITE_ARTICLES = [
     content: "content/articles/2026-05-20-regret-free-career-change-prep.md",
     href: "article.html?slug=2026-05-20-regret-free-career-change-prep"
   },
-  {
-    slug: "2026-05-19-tokyo-engineer-salary-up-method",
-    title: "東京のエンジニアが転職で年収100万円アップを実現する方法",
-    category: "年収アップ",
-    label: "green",
-    image: "assets/images/eyecatch-salary-up-career-20260515.webp.png?v=20260519-2",
-    alt: "東京のエンジニアが転職で年収100万円アップを実現する方法のアイキャッチ",
-    description: "東京で働くエンジニアが、職務経歴書、面接、求人比較、年収交渉を通じて年収100万円アップを狙う実践ガイド。",
-    date: "2026-05-19",
-    content: "content/lp/2026-05-19-tokyo-engineer-salary-up-method.md",
-    href: "article.html?slug=2026-05-19-tokyo-engineer-salary-up-method"
-  },
+  
   {
     slug: "2026-05-19-ai-news-pricing-summary",
     title: "2026年5月19日時点のAI最新情報と料金プランまとめ",
@@ -1451,18 +1440,7 @@ window.SITE_ARTICLES = [
     content: "content/articles/2026-05-18-career-strategy-map.md",
     href: "article.html?slug=2026-05-18-career-strategy-map"
   },
-  {
-    slug: "2026-05-18-tokyo-engineer-salary-up-100man-guide",
-    title: "東京エンジニア転職で年収100万アップする実践戦略ガイド",
-    category: "年収アップ",
-    label: "green",
-    image: "assets/images/eyecatch-salary-up-career-20260515.webp.png?v=20260518-2",
-    alt: "東京エンジニア転職で年収100万アップする実践戦略ガイドのアイキャッチ",
-    description: "経験3年以上のエンジニアが東京求人で年収100万円アップを狙うための市場価値、面接、職務経歴書、エージェント活用の実践ガイド。",
-    date: "2026-05-18",
-    content: "content/lp/2026-05-18-tokyo-engineer-salary-up-100man-guide.md",
-    href: "article.html?slug=2026-05-18-tokyo-engineer-salary-up-100man-guide"
-  },
+  
   {
     slug: "ai-market-value-check-lp",
     title: "【最新2026年度版】AI時代のエンジニア市場価値はどこで決まるか",
