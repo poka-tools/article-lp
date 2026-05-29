@@ -1,7 +1,35 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-29-ai-news-gemini35-gpt55-managed-agents",
+    title: "エンジニア転職に影響するAI最新情報（2026/5/29）Gemini 3.5 Flash・GPT-5.5・Managed Agents",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260529-2",
+    alt: "2026年5月29日AI最新情報のアイキャッチ",
+    description: "Google I/O 2026でGemini 3.5 Flashがデビュー。OpenAIはGPT-5.5 Instantで幻覚52%減を達成。AnthropicはClaudeのセルフホストサンドボックスを公開ベータ化。エージェントAPI民主化の動向をまとめた。",
+    sourceName: "Google DeepMind",
+    sourceUrl: "https://deepmind.google/models/gemini/flash/",
+    officialSummary: "Gemini 3.5 FlashはGemini 3.1 Proを超えるコーディング・エージェント性能を低コスト・高速で実現し、Managed Agents APIとして開発者に提供開始。",
+    meaning: "エージェント開発APIが複数社から同時公開され、「AIエージェントを設計・実装できるエンジニア」への転職市場評価がさらに高まっている。",
+    date: "2026-05-29",
+    content: "content/articles/2026-05-29-ai-news-gemini35-gpt55-managed-agents.md",
+    href: "article.html?slug=2026-05-29-ai-news-gemini35-gpt55-managed-agents"
+  },
+  {
+    slug: "2026-05-29-bonus-after-tensyoku-3steps",
+    title: "ボーナスが出たあと転職を考えたとき、最初にすべきこと——SESエンジニアが評価面談の据え置きを機会に変える3ステップ",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-salary-negotiation-before-interview.jpg?v=20260529-2",
+    alt: "ボーナス後・評価面談後に転職を検討するSESエンジニアが市場価値を知るための3ステップ",
+    description: "SES平均408万vs市場537万の差はスキルではなく伝え方の差。ボーナス後の今、転職を決める前にまず市場価値を知る3ステップを解説。",
+    date: "2026-05-29",
+    content: "content/lp/2026-05-29-bonus-after-tensyoku-3steps.md",
+    href: "article.html?slug=2026-05-29-bonus-after-tensyoku-3steps"
+  },
+  {
     slug: "2026-05-29-ai-news-opus48-mythos-codex-goalmode",
-    title: "2026年5月29日時点のAI最新情報まとめ",
+    title: "エンジニア転職に影響するAI最新情報（2026/5/29）Claude Opus 4.8・Mythos・Codex Goal Mode",
     category: "AI最新情報",
     label: "purple",
     image: "assets/images/anthropic-ai-news.webp?v=20260529-1",
