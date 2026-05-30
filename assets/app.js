@@ -29,6 +29,38 @@ const PR_SLOT_IMAGES = {
     "assets/images/pr-image-under.png"
   ]
 };
+const ARTICLE_CTA_COPY = {
+  default: {
+    eyebrow: "PR",
+    title: "今の市場価値を無料で確認する",
+    body: "転職するか決める前に、年収相場と評価ポイントを把握できます。",
+    button: "無料で市場価値を確認"
+  },
+  "年収アップ": {
+    eyebrow: "PR",
+    title: "年収が上がる余地を無料で確認する",
+    body: "今の経験が転職市場でどう評価されるか、年収相場とあわせて確認できます。",
+    button: "年収相場を確認"
+  },
+  "職務経歴書": {
+    eyebrow: "PR",
+    title: "職務経歴書で伝えるべき強みを確認する",
+    body: "経験の書き方を見直す前に、採用側が評価しやすいポイントを整理できます。",
+    button: "無料で相談する"
+  },
+  "面接対策": {
+    eyebrow: "PR",
+    title: "面接前に市場評価を確認する",
+    body: "転職理由、強み、希望年収を話す前に、自分の市場価値を把握しておけます。",
+    button: "面接前に確認"
+  },
+  "AIスキル": {
+    eyebrow: "PR",
+    title: "AIスキルが転職市場でどう評価されるか確認する",
+    body: "Claude、Codex、生成AI活用経験を年収アップにつながる言葉に整理できます。",
+    button: "AIスキル評価を確認"
+  }
+};
 
 const UNDER_BANNER = `
   <div class="affiliate-banner is-slim" aria-label="PR">
@@ -40,6 +72,14 @@ const UNDER_BANNER = `
 `;
 
 const SITE_BASE_URL = "https://poka-tools.github.io/article-lp/";
+
+function getArticleCtaCopy(article) {
+  return ARTICLE_CTA_COPY[article.category] || ARTICLE_CTA_COPY.default;
+}
+
+function getAffiliateLink(slot = "lp") {
+  return AFFILIATE_LINKS[slot] || AFFILIATE_LINKS.lp || {};
+}
 
 function absoluteAssetUrl(path) {
   if (!path) return `${SITE_BASE_URL}assets/images/eyecatch-ai-era-engineer-skills.webp`;
@@ -137,6 +177,58 @@ function escapeAttribute(value) {
   return escapeHtml(value).replaceAll("'", "&#39;");
 }
 
+function trackAffiliateCtaClick(article, ctaId, affiliateSlot) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "affiliate_cta_click",
+    cta_id: ctaId,
+    article_slug: article.slug,
+    article_category: article.category,
+    affiliate_slot: affiliateSlot
+  });
+}
+
+function renderArticleCta(article, ctaId, options = {}) {
+  const slot = options.slot || "lp";
+  const link = getAffiliateLink(slot);
+  const copy = getArticleCtaCopy(article);
+  const modifier = options.modifier ? ` ${options.modifier}` : "";
+
+  return `
+    <aside class="article-conversion-cta${modifier}" aria-label="PR">
+      <span class="article-conversion-cta__eyebrow">${escapeHtml(copy.eyebrow)}</span>
+      <div class="article-conversion-cta__body">
+        <strong>${escapeHtml(copy.title)}</strong>
+        <p>${escapeHtml(copy.body)}</p>
+      </div>
+      <a class="article-conversion-cta__button" href="${escapeAttribute(link.href || "#")}" rel="nofollow sponsored" data-affiliate-cta-id="${escapeAttribute(ctaId)}" data-affiliate-slot="${escapeAttribute(slot)}">
+        ${escapeHtml(copy.button)}
+      </a>
+      <img class="tracking-pixel" width="1" height="1" src="${escapeAttribute(link.pixel || "")}" alt="">
+    </aside>
+  `;
+}
+
+function renderMobileStickyCta(article) {
+  const slot = "lp";
+  const link = getAffiliateLink(slot);
+  const copy = getArticleCtaCopy(article);
+
+  return `
+    <div class="mobile-sticky-cta" data-mobile-sticky-cta>
+      <div class="mobile-sticky-cta__copy">
+        <span>${escapeHtml(copy.eyebrow)}</span>
+        <strong>${escapeHtml(copy.title)}</strong>
+      </div>
+      <a class="mobile-sticky-cta__button" href="${escapeAttribute(link.href || "#")}" rel="nofollow sponsored" data-affiliate-cta-id="mobile_sticky" data-affiliate-slot="${escapeAttribute(slot)}">
+        ${escapeHtml(copy.button)}
+      </a>
+      <button class="mobile-sticky-cta__close" type="button" aria-label="追従CTAを閉じる" data-mobile-sticky-close>x</button>
+      <img class="tracking-pixel" width="1" height="1" src="${escapeAttribute(link.pixel || "")}" alt="">
+    </div>
+  `;
+}
+
 function isSafeLinkHref(href) {
   if (href.startsWith("#")) return true;
   if (href.startsWith("http://") || href.startsWith("https://")) return true;
@@ -193,6 +285,26 @@ function startPrImageRotation() {
   });
 }
 
+function initArticleCtas(article) {
+  document.querySelectorAll("[data-affiliate-cta-id]").forEach((link) => {
+    if (link.dataset.affiliateCtaBound === "true") return;
+    link.dataset.affiliateCtaBound = "true";
+    link.addEventListener("click", () => {
+      trackAffiliateCtaClick(article, link.dataset.affiliateCtaId, link.dataset.affiliateSlot || "lp");
+    });
+  });
+
+  const sticky = document.querySelector("[data-mobile-sticky-cta]");
+  const close = document.querySelector("[data-mobile-sticky-close]");
+  if (sticky && close) {
+    close.addEventListener("click", () => {
+      sticky.hidden = true;
+      document.body.classList.remove("has-mobile-sticky-cta");
+    });
+    document.body.classList.add("has-mobile-sticky-cta");
+  }
+}
+
 function renderInlineMarkdown(value) {
   const escaped = escapeHtml(value);
   return escaped
@@ -228,14 +340,13 @@ function markdownToHtml(markdown) {
       if (listOpen) html.push("</ul>");
       listOpen = false;
       html.push(`<h1>${renderInlineMarkdown(line.slice(2))}</h1>`);
-      html.push(`<div class="article-inline-banner article-top-cta">${A8_BANNERS.lp()}</div>`);
     } else if (line.startsWith("## ")) {
       if (listOpen) html.push("</ul>");
       listOpen = false;
       h2Count += 1;
       h3Count = 0;
-      if (h2Count === 2) {
-        html.push(`<div class="article-inline-banner">${A8_CAREER_BANNER}</div>`);
+      if (h2Count === 2 && window.currentArticleForCta) {
+        html.push(renderArticleCta(window.currentArticleForCta, "article_mid", { modifier: "is-featured" }));
       }
       html.push(`<h2 id="section-${h2Count}">${renderInlineMarkdown(line.slice(3))}</h2>`);
     } else if (line.startsWith("### ")) {
@@ -454,6 +565,7 @@ async function renderArticleDetail() {
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("slug");
   const article = window.SITE_ARTICLES.find((item) => item.slug === slug) || window.SITE_ARTICLES[0];
+  window.currentArticleForCta = article;
 
   updateArticleMeta(article);
   renderRelatedArticles(article.slug);
@@ -480,11 +592,15 @@ async function renderArticleDetail() {
         </aside>
       ` : ""}
       <div class="article-detail-body">
+        ${renderArticleCta(article, "article_header", { modifier: "is-compact" })}
         ${renderArticleToc(markdown)}
         ${markdownToHtml(markdown)}
+        ${renderArticleCta(article, "article_end", { modifier: "is-closing" })}
       </div>
+      ${renderMobileStickyCta(article)}
     `;
     renderAffiliateBanners();
+    initArticleCtas(article);
   } catch (error) {
     target.innerHTML = "<h1>記事を読み込めませんでした</h1><p>時間をおいて再度お試しください。</p>";
   }
