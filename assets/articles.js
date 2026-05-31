@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-05-31-ai-news-claude-code-security-codex-windows",
+    title: "2026年5月31日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260531-1",
+    alt: "2026年5月31日AI最新情報のアイキャッチ",
+    description: "AnthropicがClaude Codeにセキュリティプラグインとultracodeモードを追加、OpenAIはCodexのWindows PC操作対応を発表。AIエージェント開発の実用化が加速する最新動向をエンジニア転職視点で解説。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://www.anthropic.com/news",
+    officialSummary: "AnthropicがClaude Code向けセキュリティプラグイン（25種脆弱性パターン検出）とultracodeモードを公開。OpenAIはCodexのWindows Computer Use対応とモバイルからの遠隔制御機能を正式リリース。",
+    meaning: "AIツールで安全なコードを素早く届けられるエンジニアへの需要が高まり、SESエンジニアがAI活用実績を語れるかどうかが転職評価の分岐点になる。",
+    date: "2026-05-31",
+    content: "content/articles/2026-05-31-ai-news-claude-code-security-codex-windows.md",
+    href: "article.html?slug=2026-05-31-ai-news-claude-code-security-codex-windows"
+  },
+  {
+    slug: "2026-05-31-ses-hyoka-mendan-sumioki-shijo-hyoka-structure",
+    title: "評価面談でまた据え置きになったエンジニアへ——社内評価と市場評価がズレる構造と、SES経験が外で「思ったより高く」評価される理由",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-800man-engineer-common-points.jpg?v=20260531-2",
+    alt: "評価面談で据え置きになったSESエンジニアが社内評価と市場評価の違いを理解して転職を検討するイメージ",
+    description: "「また据え置き」はスキルの問題ではなく社内評価の構造的限界。SES経験が市場で思ったより高く評価される仕組みと、社内・市場評価のズレを解消するための具体的な3ステップを解説。",
+    date: "2026-05-31",
+    content: "content/lp/2026-05-31-ses-hyoka-mendan-sumioki-shijo-hyoka-structure.md",
+    href: "article.html?slug=2026-05-31-ses-hyoka-mendan-sumioki-shijo-hyoka-structure"
+  },
+  {
     slug: "2026-05-29-ai-news-gemini35-gpt55-managed-agents",
     title: "エンジニア転職に影響するAI最新情報（2026/5/29）Gemini 3.5 Flash・GPT-5.5・Managed Agents",
     category: "AI最新情報",
