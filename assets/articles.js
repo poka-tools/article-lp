@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-06-01-ai-news-claude-openai-june",
+    title: "2026年6月1日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/anthropic-ai-news.webp?v=20260601-1",
+    alt: "2026年6月1日AI最新情報のアイキャッチ",
+    description: "AnthropicがAgent SDK課金を6月15日から分割移行・Claude Opus 4.8がGitHub Copilot GAに。OpenAIはGPT-4.5を6月27日廃止しGPT-5系への世代交代を加速。エンジニアのAI運用スキル需要が高まっている。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://thenewstack.io/anthropic-agent-sdk-credits/",
+    officialSummary: "AnthropicはAgent SDKを月額定額プールから分割し専用クレジット制に移行（6/15〜）。OpenAIはGPT-4.5をChatGPTで6月27日に廃止しGPT-5.5 Instantをデフォルト化。",
+    meaning: "AIのコスト構造を理解して運用できるエンジニアの需要が高まり、SESエンジニアはAgent SDK対応・モデル移行経験を転職の武器にできる局面にある。",
+    date: "2026-06-01",
+    content: "content/articles/2026-06-01-ai-news-claude-openai-june.md",
+    href: "article.html?slug=2026-06-01-ai-news-claude-openai-june"
+  },
+  {
+    slug: "2026-06-01-bonus-after-ses-salary-real-reason",
+    title: "ボーナスが少なかったSESエンジニアへ——年収差が生まれる本当の理由と転職市場での正しい評価の受け方",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-800man-engineer-common-points.jpg?v=20260601-2",
+    alt: "SESエンジニアの年収差の原因と転職市場での評価改善方法",
+    description: "ボーナスが少ない・据え置きのSESエンジニアへ。年収差はスキルの差ではなくSES構造と伝え方の差。転職市場で正しく評価される具体的な言語化手順を解説します。",
+    date: "2026-06-01",
+    content: "content/lp/2026-06-01-bonus-after-ses-salary-real-reason.md",
+    href: "article.html?slug=2026-06-01-bonus-after-ses-salary-real-reason"
+  },
+  {
     slug: "2026-05-31-ai-news-claude-code-security-codex-windows",
     title: "2026年5月31日時点のAI最新情報まとめ",
     category: "AI最新情報",
