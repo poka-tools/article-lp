@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-06-02-ai-news-latest",
+    title: "2026年6月2日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260602-1",
+    alt: "2026年6月2日AI最新情報のアイキャッチ",
+    description: "Claude PlatformのAWS統合・Managed Agentsセルフホスト・Claude Codeダイナミックワークフロー、OpenAIのGPT-5.5/5.4 Bedrock提供・Codex Windows Computer Use対応など6月2日の主要アップデートを解説。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://platform.claude.com/docs/en/release-notes/overview",
+    officialSummary: "AnthropicはClaude PlatformをAWSで提供開始しManaged Agentsセルフホストサンドボックスを追加。OpenAIはGPT-5.5・GPT-5.4・CodexをAmazon Bedrockで展開しCodexのWindows Computer Useを解放した。",
+    meaning: "AWSとAI APIの統合が加速し、クラウド×AIエージェント設計・運用経験が転職市場での差別化要素になりつつある。",
+    date: "2026-06-02",
+    content: "content/articles/2026-06-02-ai-news-latest.md",
+    href: "article.html?slug=2026-06-02-ai-news-latest"
+  },
+  {
+    slug: "2026-06-02-ses-bonus-low-salary-reason",
+    title: "ボーナスが少ない理由は、技術力じゃなかった——SESエンジニアの年収が上がらない構造と、6月に動き始めた人だけが知ること",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-800man-engineer-common-points.jpg?v=20260602-2",
+    alt: "SESエンジニアのボーナスと年収構造を解説する記事のアイキャッチ",
+    description: "ボーナスが少ないのは技術力のせいではありません。SESというビジネスモデルの構造的な問題です。年収差129万×5年＝645万円の機会損失と、6月に動き始めた人だけが知る転職市場の実態を解説します。",
+    date: "2026-06-02",
+    content: "content/lp/2026-06-02-ses-bonus-low-salary-reason.md",
+    href: "article.html?slug=2026-06-02-ses-bonus-low-salary-reason"
+  },
+  {
     slug: "2026-06-01-ai-news-claude-openai-june",
     title: "2026年6月1日時点のAI最新情報まとめ",
     category: "AI最新情報",
