@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-06-05-ai-news-opus48-gpt55-career",
+    title: "2026年6月5日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/anthropic-ai-news.webp?v=20260605-1",
+    alt: "2026年6月5日AI最新情報のアイキャッチ",
+    description: "Claude Opus 4.8のダイナミックワークフロー・エフォート制御・Project Glasswing拡大、GPT-5.5 Instantの幻覚52%削減、ChatGPT求人・履歴書機能統合を解説。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://www.anthropic.com/news/claude-opus-4-8",
+    officialSummary: "Anthropic がClaude Opus 4.8を正式リリースしエフォート制御・ダイナミックワークフロー・Claude Securityを提供開始。OpenAI はGPT-5.5 Instantを既定モデルとし、ChatGPTに求人検索・履歴書作成機能を統合した。",
+    meaning: "AIのサブエージェント設計やコスト最適化を実務で語れるエンジニアが採用市場での差別化要素になりつつある。",
+    date: "2026-06-05",
+    content: "content/articles/2026-06-05-ai-news-opus48-gpt55-career.md",
+    href: "article.html?slug=2026-06-05-ai-news-opus48-gpt55-career"
+  },
+  {
+    slug: "2026-06-05-ses-shokumukeireki-tsutaeru-guide",
+    title: "SESエンジニアの職務経歴書、ここを変えれば採用担当者の評価が変わる——常駐・下流工程でも市場価値が伝わる書き方の具体手順",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-resume-interview-tips.jpg?v=20260605-2",
+    alt: "SESエンジニアが職務経歴書の書き方を見直して転職市場での評価を上げるための具体的な手順を解説",
+    description: "SESの職歴が「読まれにくい」本当の理由と、採用担当者の目に止まる書き方の5ステップ。常駐・下流工程でも市場価値が正しく伝わる職務経歴書の具体的な書き方手順を解説。",
+    date: "2026-06-05",
+    content: "content/lp/2026-06-05-ses-shokumukeireki-tsutaeru-guide.md",
+    href: "article.html?slug=2026-06-05-ses-shokumukeireki-tsutaeru-guide"
+  },
+  {
     slug: "2026-06-02-ai-news-latest",
     title: "2026年6月2日時点のAI最新情報まとめ",
     category: "AI最新情報",
