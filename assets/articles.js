@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-06-08-ai-news-codex-sites-dynamic-workflows",
+    title: "2026年6月8日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260608-1",
+    alt: "2026年6月8日AI最新情報のアイキャッチ",
+    description: "Claude Codeのダイナミックワークフロー（最大1,000サブエージェント）とultracode、Anthropicの法務MCP参入、OpenAI CodexのSites・Windows対応・モバイル連携を解説。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+    officialSummary: "AnthropicはClaude Codeのダイナミックワークフロー（最大1,000サブエージェント並列）とultracode設定、20以上の法務MCPコネクタを公開。OpenAIはCodexのSitesプレビュー、Windows Computer Use対応、ChatGPTモバイル連携を投入した。",
+    meaning: "AI活用がプロンプト入力からエージェント群のオーケストレーション設計へ移行し、実務での運用実績が転職市場の評価を左右するようになる。",
+    date: "2026-06-08",
+    content: "content/articles/2026-06-08-ai-news-codex-sites-dynamic-workflows.md",
+    href: "article.html?slug=2026-06-08-ai-news-codex-sites-dynamic-workflows"
+  },
+  {
+    slug: "2026-06-08-ses-1nen-tensyoku-hayasugi-handan",
+    title: "SES1年目で転職は早すぎる？——「短期離職」ではなく「案件の質を変える」という判断基準",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-era-engineer-skills.jpg?v=20260608-2",
+    alt: "SES1年目のエンジニアが案件の質と市場相場をもとに転職の判断軸を考える様子",
+    description: "SES1年目の転職は早すぎる？判断軸は期間ではなく案件の質。市場相場・還元率・ポテンシャル枠から、留まるか動くかを構造で見極める基準を解説。",
+    date: "2026-06-08",
+    content: "content/lp/2026-06-08-ses-1nen-tensyoku-hayasugi-handan.md",
+    href: "article.html?slug=2026-06-08-ses-1nen-tensyoku-hayasugi-handan"
+  },
+  {
     slug: "2026-06-05-ai-news-opus48-gpt55-career",
     title: "2026年6月5日時点のAI最新情報まとめ",
     category: "AI最新情報",
