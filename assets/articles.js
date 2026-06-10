@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-06-10-ai-news-ultracode-chatgpt-memory",
+    title: "2026年6月10日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260610-1",
+    alt: "2026年6月10日AI最新情報のアイキャッチ",
+    description: "Claude Codeの動的ワークフローがultracodeに改名、Opus 4.8がデフォルト化。ChatGPTはメモリ刷新とLockdown Mode、GPT-4.5は6/27提供終了。転職目線で解説。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+    officialSummary: "Claude Codeの動的ワークフローがultracodeへ改名されOpus 4.8が高負荷推論でデフォルト化。ChatGPTはメモリ2倍化とLockdown Modeを提供し、GPT-4.5は2026年6月27日に提供終了。",
+    meaning: "AIが自律実行主体へ移行し、設計と検証・AIの安全運用ができる人材の市場価値が高まる。",
+    date: "2026-06-10",
+    content: "content/articles/2026-06-10-ai-news-ultracode-chatgpt-memory.md",
+    href: "article.html?slug=2026-06-10-ai-news-ultracode-chatgpt-memory"
+  },
+  {
+    slug: "2026-06-10-ses-infra-unyo-market-value-tsutaekata",
+    title: "インフラ・運用保守SESは\"作業者\"と見られて損してる——構築/自動化/クラウド経験を市場価値に翻訳する職務経歴書の書き方",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-resume-interview-tips.jpg?v=20260610-2",
+    alt: "インフラ・運用保守SESエンジニアが構築・自動化・クラウド経験を職務経歴書で市場価値に翻訳する方法を解説するイメージ",
+    description: "インフラ・運用保守SESは作業者と見られ年収50〜100万円損をしがち。構築・自動化・クラウド経験を成果として翻訳する職務経歴書の具体手順を解説。",
+    date: "2026-06-10",
+    content: "content/lp/2026-06-10-ses-infra-unyo-market-value-tsutaekata.md",
+    href: "article.html?slug=2026-06-10-ses-infra-unyo-market-value-tsutaekata"
+  },
+  {
     slug: "2026-06-08-ai-news-codex-sites-dynamic-workflows",
     title: "2026年6月8日時点のAI最新情報まとめ",
     category: "AI最新情報",
