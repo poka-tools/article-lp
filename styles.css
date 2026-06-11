@@ -751,6 +751,27 @@ a {
   margin-inline: auto;
 }
 
+.affiliate-banner.is-rectangle::before {
+  content: "PR";
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  min-width: 38px;
+  padding: 0 10px;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--purple), #2f246f);
+  box-shadow: 0 8px 18px rgba(75, 50, 200, 0.28);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .affiliate-banner.is-rectangle a {
   width: min(100%, 300px);
   aspect-ratio: 300 / 250;

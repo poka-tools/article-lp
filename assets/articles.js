@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-06-11-ai-news-claude-fable5-gpt55",
+    title: "2026年6月11日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/anthropic-ai-news.webp?v=20260611-1",
+    alt: "2026年6月11日AI最新情報のアイキャッチ",
+    description: "6月9日にAnthropicが過去最強クラスの「Claude Fable 5」を一般公開。OpenAIもChatGPT標準モデルをGPT-5.5 Instantに刷新。エンジニア転職市場への影響を解説します。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    officialSummary: "Anthropicは6月9日、Mythosクラスの新モデルClaude Fable 5を一般公開。ほぼ全ベンチマークで最先端を記録し、Stripeは2か月分のRubyマイグレーションを1日で完了したと報告。OpenAIはChatGPT標準をGPT-5.5 Instantに刷新しCodexのGoal modeも正式提供した。",
+    meaning: "AIが大規模リファクタリング等のプロジェクト規模作業を担う時代に入り、評価軸が「手を速く動かす人」から「AIに長く複雑なタスクを安全に任せ検証・統合できる人」へ移っている。",
+    date: "2026-06-11",
+    content: "content/articles/2026-06-11-ai-news-claude-fable5-gpt55.md",
+    href: "article.html?slug=2026-06-11-ai-news-claude-fable5-gpt55"
+  },
+  {
+    slug: "2026-06-11-hikaihatsu-ses-tensyoku-honyaku",
+    title: "「コードを書いてないから転職は無理」は思い込み——監視・運用・ヘルプデスク・QAの経験を市場価値に翻訳して評価される伝え方",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-resume-interview-tips.jpg?v=20260611-2",
+    alt: "監視・運用・ヘルプデスク・QAなど非開発系SESの経験を職務経歴書で市場価値に翻訳する伝え方を解説するイメージ",
+    description: "監視・運用・ヘルプデスク・QAの経験は市場で過小評価されがち。原因はスキル不足ではなく伝え方。職種別の翻訳手順と年収アップ事例を解説。",
+    date: "2026-06-11",
+    content: "content/lp/2026-06-11-hikaihatsu-ses-tensyoku-honyaku.md",
+    href: "article.html?slug=2026-06-11-hikaihatsu-ses-tensyoku-honyaku"
+  },
+  {
     slug: "2026-06-10-ai-news-ultracode-chatgpt-memory",
     title: "2026年6月10日時点のAI最新情報まとめ",
     category: "AI最新情報",
