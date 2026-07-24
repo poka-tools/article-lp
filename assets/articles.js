@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-07-24-ai-news-dev-tools-trend",
+    title: "2026年7月時点のAI開発ツール最新動向まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260724-1",
+    alt: "2026年7月AI開発ツール最新動向のアイキャッチ",
+    description: "AnthropicのClaude現行ラインナップ（Fable 5・Opus 4.8・Sonnet 4.6ほか）とOpenAI CodexのPRレビュー・マルチリポ対応など、AI協働開発の広がりをエンジニア転職視点で整理。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://www.anthropic.com/news",
+    officialSummary: "AI開発ツールがコード補完からPRレビュー・複数リポジトリ横断作業までこなす業務パートナーへと進化。高性能モデルが中価格帯でも利用しやすくなっている。",
+    meaning: "AIに何を任せ何を判断するかを設計・言語化できるエンジニアの市場価値が上がっている。",
+    date: "2026-07-24",
+    content: "content/articles/2026-07-24-ai-news-dev-tools-trend.md",
+    href: "article.html?slug=2026-07-24-ai-news-dev-tools-trend"
+  },
+  {
+    slug: "2026-07-24-ai-ni-ubawareru-sagyou-hyouka-handan-sekkei",
+    title: "AIに\"奪われる\"のは作業だけ——運用・監視SESが評価される『判断と設計』の言語化",
+    category: "転職ガイド",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-era-engineer-skills.jpg?v=20260724-2",
+    alt: "AI時代に運用・監視・QAのSES経験者が判断と設計の言葉で評価される仕組みを示すイメージ",
+    description: "AIが奪うのは作業、市場が値上げするのは判断と設計。運用・監視・QAのSES3〜5年層向けに、毎日の判断を職務経歴書で言語化し値上がりする側へ翻訳する手順を解説。",
+    date: "2026-07-24",
+    content: "content/lp/2026-07-24-ai-ni-ubawareru-sagyou-hyouka-handan-sekkei.md",
+    href: "article.html?slug=2026-07-24-ai-ni-ubawareru-sagyou-hyouka-handan-sekkei"
+  },
+  {
     slug: "2026-07-24-ai-news-voice-mode-codex-multifolder",
     title: "2026年7月24日時点のAI最新情報まとめ",
     category: "AI最新情報",
