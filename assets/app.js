@@ -98,7 +98,7 @@ function setMetaContent(selector, content) {
 }
 
 function updateArticleMeta(article) {
-  const title = `${article.title} | エンジニア転職ラボ`;
+  const title = `${article.title} | IT系転職ラボ`;
   const description = article.description || "エンジニア転職、AIスキル、職務経歴書、面接対策、年収アップの記事です。";
   const url = `${SITE_BASE_URL}article.html?slug=${encodeURIComponent(article.slug)}`;
   const image = absoluteAssetUrl(getArticleImage(article));
