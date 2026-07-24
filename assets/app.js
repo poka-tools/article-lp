@@ -150,6 +150,24 @@ function renderSidePrBanner() {
   `;
 }
 
+// 障害者向けIT就労移行支援の専用PR枠。
+// AFFILIATE_LINKS.shuro（href/image/pixel）を設定すれば実バナーに差し替わり、
+// 未設定の間はプレースホルダー表示になる（エンジニア転職バナーは流用しない）。
+function renderShuroBanner() {
+  const link = AFFILIATE_LINKS.shuro || {};
+  const inner = link.image
+    ? `<img width="1619" height="971" alt="障害者向けIT就労移行支援サービスのPR" src="${link.image}">`
+    : `<span class="banner-placeholder">PR｜障害者向けIT就労移行支援サービス（提携準備中）</span>`;
+  return `
+    <div class="affiliate-banner is-shuro" aria-label="PR">
+      <a href="${link.href || "#"}" rel="nofollow sponsored">
+        ${inner}
+      </a>
+      <img class="tracking-pixel" width="1" height="1" src="${link.pixel || ""}" alt="">
+    </div>
+  `;
+}
+
 const A8_BANNERS = {
   compact: `
     <div class="affiliate-banner is-compact" aria-label="PR">
@@ -167,6 +185,7 @@ const A8_BANNERS = {
   wide: () => renderPrBanner("is-tensyoku", "lp"),
   tensyoku: () => renderPrBanner("is-tensyoku", "lp"),
   top: () => renderPrBanner("is-top-pr", "top"),
+  shuro: () => renderShuroBanner(),
   under: UNDER_BANNER
 };
 const A8_CAREER_BANNER = A8_BANNERS.wide;
@@ -366,6 +385,12 @@ function markdownToHtml(markdown) {
         listOpen = false;
       }
       html.push(`<div class="article-inline-banner">${A8_BANNERS.lp()}</div>`);
+    } else if (line === "{{PR_SHURO_BANNER}}") {
+      if (listOpen) {
+        html.push("</ul>");
+        listOpen = false;
+      }
+      html.push(`<div class="article-inline-banner">${renderShuroBanner()}</div>`);
     } else if (line.startsWith("- ")) {
       if (!listOpen) {
         html.push("<ul>");

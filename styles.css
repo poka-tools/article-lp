@@ -738,6 +738,29 @@ a {
   object-fit: contain;
 }
 
+/* 障害者IT就労移行支援の提携準備中プレースホルダー枠 */
+.affiliate-banner.is-shuro a {
+  width: 100%;
+  box-shadow: none;
+}
+
+.affiliate-banner.is-shuro .banner-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 96px;
+  padding: 18px 20px;
+  border: 2px dashed #b7a8e0;
+  border-radius: 16px;
+  background: #f6f2fd;
+  color: #6a5aa0;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.6;
+}
+
 .affiliate-banner .tracking-pixel {
   position: absolute;
   width: 1px;

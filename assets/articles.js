@@ -1,5 +1,17 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-07-24-shogaisha-it-shurou-shien",
+    title: "障害があってもITで働ける——就労移行支援で未経験からIT就職する手順",
+    category: "障害者IT就労",
+    label: "purple",
+    image: "assets/images/eyecatch-remote-work-job-check.jpg?v=20260724-1",
+    alt: "障害者のIT就職と就労移行支援ガイドのアイキャッチ",
+    description: "障害のある方がITで働くための就労移行支援ガイド。オープン就労、就きやすいIT職種、費用、面接での伝え方まで、未経験からの手順を解説します。",
+    date: "2026-07-24",
+    content: "content/lp/2026-07-24-shogaisha-it-shurou-shien.md",
+    href: "article.html?slug=2026-07-24-shogaisha-it-shurou-shien"
+  },
+  {
     slug: "2026-07-22-ai-news-cowork-reflect-codex-remote",
     title: "2026年7月22日時点のAI最新情報まとめ",
     category: "AI最新情報",
