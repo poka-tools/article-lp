@@ -1,5 +1,33 @@
 window.SITE_ARTICLES = [
   {
+    slug: "2026-07-24-ai-news-voice-mode-codex-multifolder",
+    title: "2026年7月24日時点のAI最新情報まとめ",
+    category: "AI最新情報",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-news-general.jpg?v=20260724-1",
+    alt: "2026年7月24日AI最新情報のアイキャッチ",
+    description: "Claude音声モードのOpus/Sonnet対応・クロスアプリ自動化と、Codexのマルチフォルダ対応・Mermaid図描画など7月最新更新を、エンジニア転職の視点で解説。",
+    sourceName: "Anthropic / OpenAI",
+    sourceUrl: "https://learn.chatgpt.com/docs/changelog",
+    officialSummary: "Anthropicは7/23にClaude音声モードをOpus/Sonnet対応・Gmail等クロスアプリ自動化へ拡張。OpenAIはCodexにマルチフォルダ・プロジェクトとMermaid図/インタラクティブフォーム対応を追加した。",
+    meaning: "AIが複数リポジトリ横断・音声操作エージェント化することで、俯瞰的にAIへ作業を設計・委任できるエンジニアの市場価値が高まる。",
+    date: "2026-07-24",
+    content: "content/articles/2026-07-24-ai-news-voice-mode-codex-multifolder.md",
+    href: "article.html?slug=2026-07-24-ai-news-voice-mode-codex-multifolder"
+  },
+  {
+    slug: "2026-07-24-shogaisha-it-jigyosho-mikiwame",
+    title: "IT系就労移行支援の見極め方——「ITを名乗るだけ」の事業所と本当に就職させる事業所の違い",
+    category: "障害者IT就労",
+    label: "purple",
+    image: "assets/images/eyecatch-ai-era-engineer-skills.jpg?v=20260724-3",
+    alt: "IT系就労移行支援事業所を数字で見極めるチェックリストのイメージ",
+    description: "法定雇用率2.7%引き上げが追い風のいま、IT職種で本当に就職させる就労移行支援事業所の見極め方を、就職率・定着率などの基準数値とチェックリストで解説。",
+    date: "2026-07-24",
+    content: "content/lp/2026-07-24-shogaisha-it-jigyosho-mikiwame.md",
+    href: "article.html?slug=2026-07-24-shogaisha-it-jigyosho-mikiwame"
+  },
+  {
     slug: "2026-07-24-shogaisha-it-shurou-shien",
     title: "障害があってもITで働ける——就労移行支援で未経験からIT就職する手順",
     category: "障害者IT就労",
